@@ -27,7 +27,7 @@
         ],
     "requiredRoles": ["TenantAdmin"],
     "api-key_required": false,
-    "data-connection": true
+    "data-connection": false
     },
     {
     "id": 20,
