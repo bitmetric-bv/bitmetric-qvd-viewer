@@ -1,4 +1,5 @@
-{
+[
+    {
     "id": 10,
     "product": "QVD Viewer",
     "files": [
@@ -25,4 +26,33 @@
             }
         ],
     "requiredRoles": ["TenantAdmin"]
-}
+    },
+    {
+    "id": 20,
+    "product": "Master Item Viewer",
+    "files": [
+            {
+                "type": "app",
+                "file name": "Tenant-extract-app",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Selection-app.qvf",
+                "bitmetric-installer" : true
+            },
+            {
+                "type": "app",
+                "file name": "Master-item-app",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Data-profiling-app.qvf",
+                "bitmetric-installer" : true
+            },
+            {
+                "type": "automation",
+                "file name": "Master-item-automation",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-App-Reload.json",
+                "bitmetric-installer" : true
+            }
+        ],
+    "requiredRoles": ["TenantAdmin", "developer"]
+    }
+]
