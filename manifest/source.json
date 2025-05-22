@@ -1,1 +1,29 @@
 
+{
+    "id": 10,
+    "product": "QVD Viewer",
+    "files": [
+            {
+                "type": "app",
+                "file name": "ODAG-Selection-app",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Selection-app.qvf",
+                "bitmetric-installer" : true
+            },
+            {
+                "type": "app",
+                "file name": "ODAG-Data-profiling-app",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Data-profiling-app.qvf",
+                "bitmetric-installer" : true
+            },
+            {
+                "type": "automation",
+                "file name": "ODAG-App-Reload",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-App-Reload.json",
+                "bitmetric-installer" : true
+            }
+        ],
+    "requiredRoles": ["TenantAdmin"]
+}
