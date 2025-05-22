@@ -25,9 +25,9 @@
                 "bitmetric-installer" : true
             }
         ],
-    "requiredRoles": ["TenantAdmin"],
     "api-key_required": false,
-    "data-connection": false
+    "data-connection": false,
+    "tenant-admin":true
     },
     {
     "id": 20,
@@ -55,8 +55,8 @@
                 "bitmetric-installer" : true
             }
         ],
-    "requiredRoles": ["TenantAdmin", "developer"],
     "api-key_required": true,
-    "data-connection": true
+    "data-connection": true,
+    "tenant-admin":true
     }
 ]
