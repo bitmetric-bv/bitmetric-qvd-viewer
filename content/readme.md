@@ -1,1 +1,1 @@
-## This folder contains apps
+## This folder contains apps and automation
