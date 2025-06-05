@@ -38,22 +38,31 @@
                 "type": "app",
                 "file name": "Tenant-extract-app",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Selection-app.qvf",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Tenant-extract-app.qvf",
                 "bitmetric-installer" : true
             },
             {
                 "type": "app",
                 "file name": "Master-item-app",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Data-profiling-app.qvf",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-item-app.qvf",
                 "bitmetric-installer" : true
             },
             {
                 "type": "automation",
-                "file name": "Master-item-automation",
+                "file name": "Master-measure-automation",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-App-Reload.json",
-                "bitmetric-installer" : true
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-measure-automation.json",
+                "bitmetric-installer" : true,
+                "save_id_in" : "bitmetric_id_1"
+            },
+            {
+                "type": "automation",
+                "file name": "Master-dimension-automation",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-dimension-automationjson",
+                "bitmetric-installer" : true,
+                "save_id_in" : "bitmetric_id_2"
             }
         ],
     "tag name": ["Master-item-viewer", "Bitmetric"],
