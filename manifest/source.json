@@ -6,24 +6,19 @@
         [
             {
                 "type": "app",
-                "file name": "ODAG-Selection-app",
+                "file name": "QVD selection",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Selection-app.qvf",
-                "bitmetric-installer" : true
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/QVD Viewer/QVD-selection.qvf",
+                "bitmetric-installer" : true,
+                "reload_after_installation" : false
             },
             {
                 "type": "app",
-                "file name": "ODAG-Data-profiling-app",
+                "file name": "QVD viewer",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-Data-profiling-app.qvf",
-                "bitmetric-installer" : true
-            },
-            {
-                "type": "automation",
-                "file name": "ODAG-App-Reload",
-                "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/ODAG-App-Reload.json",
-                "bitmetric-installer" : true
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/QVD Viewer/QVD-viewer.qvf",
+                "bitmetric-installer" : true,
+                "reload_after_installation" : false
             }
         ],
     "input":"The installer for the QVD Viewer first verifies the required conditions before the actual installation can begin.\n\nIf all conditions are met, the process will continue by installing the automation ODAG-App-Reload.\n\nAfter that, the installer will deploy the following applications:\n- ODAG-Selection-App\n- ODAG-Data-Profiling-App\n\nDuring installation, the process will check if a previous version already exists. If so, the user will be asked whether the existing version should be removed before proceeding.",
@@ -40,31 +35,35 @@
         [
             {
                 "type": "app",
-                "file name": "Tenant-extract-app",
+                "file name": "Extract Qlik Tenant data",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Tenant-extract-app.qvf",
-                "bitmetric-installer" : true
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Extract-qlik-tenant Data.qvf",
+                "bitmetric-installer" : true,
+                "use_saved_id" : "bitmetric_id_1",
+                "reload_after_installation" : true
             },
             {
                 "type": "app",
-                "file name": "Master-item-app",
+                "file name": "Master-item-analyzer",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-item-app.qvf",
-                "bitmetric-installer" : true
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Master-item-analyzer.qvf",
+                "bitmetric-installer" : true,
+                "use_saved_id" : "bitmetric_id_2",
+                "reload_after_installation" : false
             },
             {
                 "type": "automation",
-                "file name": "Master-measure-automation",
+                "file name": "Master measure extractor",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-measure-automation.json",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Master-measure-extractor.json",
                 "bitmetric-installer" : true,
                 "save_id_in" : "bitmetric_id_1"
             },
             {
                 "type": "automation",
-                "file name": "Master-dimension-automation",
+                "file name": "Master dimension extractor",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master-dimension-automationjson",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Master-dimension-extractor.json",
                 "bitmetric-installer" : true,
                 "save_id_in" : "bitmetric_id_2"
             }
@@ -75,6 +74,46 @@
     "api-key_required": true,
     "data-connection": true,
     "tenant-admin":true
-    
+    },
+    {
+    "id": 30,
+    "product": "Bitmetric App Promoter",
+    "files": 
+        [
+            {
+                "type": "automation",
+                "file name": "Bitmetric App Promoter",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Bitmetric App Promoter/Bitmetric-app-promoter.json",
+                "bitmetric-installer" : true
+            }
+        ],
+    "input":"Bitmetric App Promoter",
+    "output":"Bitmetric App Promoter",
+    "tag name": ["App Promoter", "Bitmetric"],
+    "api-key_required" : false,
+    "data-connection" : false,
+    "tenant-admin" : true
+    },
+    {
+    "id": 40,
+    "product": "Bitmetric Script Library",
+    "files": 
+        [
+            {
+                "type": "app",
+                "file name": "Bitmetric Script Library",
+                "version": "1.0.0",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Bitmetric Script Library/Bitmetric-script-library.qvf",
+                "bitmetric-installer" : true,
+                "reload_after_installation" : false
+            }
+        ],
+    "input":"Input script library",
+    "output":"output script library",
+    "tag name": ["Script Library", "Bitmetric"],
+    "api-key_required" : false,
+    "data-connection" : false,
+    "tenant-admin" : true
     }
 ]
