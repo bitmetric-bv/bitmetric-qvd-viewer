@@ -2,7 +2,8 @@
     {
     "id": 10,
     "product": "QVD Viewer",
-    "files": [
+    "files": 
+        [
             {
                 "type": "app",
                 "file name": "ODAG-Selection-app",
@@ -25,6 +26,8 @@
                 "bitmetric-installer" : true
             }
         ],
+    "input":"The installer for the QVD Viewer first verifies the required conditions before the actual installation can begin.\n\nIf all conditions are met, the process will continue by installing the automation ODAG-App-Reload.\n\nAfter that, the installer will deploy the following applications:\n- ODAG-Selection-App\n- ODAG-Data-Profiling-App\n\nDuring installation, the process will check if a previous version already exists. If so, the user will be asked whether the existing version should be removed before proceeding.",
+    "output":"### Last Steps for you:\n\nWe need your help for the last steps. You need to synchronize the button with the automation to get the right Execution Token.\n\n#### Step 1:\nOpen [ODAG Selection App](https://bitmetric-bv.eu.qlikcloud.com/sense/app/{$.oSettings.ODAG-Selection-app})\n*Tip: Press CTRL to open in new tab*\n\n#### Step 2:\nEdit the master-item: **Reload button** and link this to the new automation: **ODAG App Reload**.\n\n#### Step 3:\nSetup **ODAG connection**. To explain.\n\n#### Step 4:\nStart enjoying your QVD Cloud Viewer! ☀\n\nRegards,\nYour friends at [**Bitmetric**](https://www.bitmetric.nl)\n\n💌 Need help? Contact us at [support@bitmetric.nl](mailto:support@bitmetric.nl)",
     "tag name": ["QVD-Viewer", "Bitmetric"],
     "api-key_required": false,
     "data-connection": false,
@@ -33,7 +36,8 @@
     {
     "id": 20,
     "product": "Master Item Viewer",
-    "files": [
+    "files": 
+        [
             {
                 "type": "app",
                 "file name": "Tenant-extract-app",
@@ -65,9 +69,12 @@
                 "save_id_in" : "bitmetric_id_2"
             }
         ],
+    "input":"Input master item",
+    "output":"output master item",
     "tag name": ["Master-item-viewer", "Bitmetric"],
     "api-key_required": true,
     "data-connection": true,
     "tenant-admin":true
+    
     }
 ]
