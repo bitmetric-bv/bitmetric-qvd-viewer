@@ -39,7 +39,7 @@
                 "version": "1.0.0",
                 "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Extract-qlik-tenant-data.qvf",
                 "bitmetric-installer" : true,
-                "use_saved_id" : "bitmetric_id_1",
+                "use_saved_id" : ["bitmetric_id_1", "bitmetric_id_2"],
                 "reload_after_installation" : true
             },
             {
@@ -48,7 +48,6 @@
                 "version": "1.0.0",
                 "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Master-item-analyzer.qvf",
                 "bitmetric-installer" : true,
-                "use_saved_id" : "bitmetric_id_2",
                 "reload_after_installation" : false
             },
             {
@@ -117,3 +116,4 @@
     "tenant-admin" : true
     }
 ]
+
