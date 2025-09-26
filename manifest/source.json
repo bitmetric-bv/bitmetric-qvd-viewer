@@ -37,7 +37,7 @@
                 "type": "app",
                 "file name": "Extract Qlik Tenant data",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Extract-qlik-tenant Data.qvf",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/Extract-qlik-tenant-data.qvf",
                 "bitmetric-installer" : true,
                 "use_saved_id" : "bitmetric_id_1",
                 "reload_after_installation" : true
