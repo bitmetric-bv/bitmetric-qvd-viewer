@@ -24,7 +24,7 @@
                 "type": "automation",
                 "file name": "QVD selection reload",
                 "version": "1.0.0",
-                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/QVD-selection-reload.json",
+                "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/QVD Viewer/QVD-selection-reload.json",
                 "bitmetric-installer" : true
             }
         ],
@@ -123,5 +123,6 @@
     "tenant-admin" : true
     }
 ]
+
 
 
