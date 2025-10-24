@@ -26,7 +26,7 @@
                 "version": "1.0.0",
                 "source": "https://github.com/bitmetric-bv/bitmetric-qvd-viewer/raw/main/content/Master Item Viewer/QVD-selection-reload.json",
                 "bitmetric-installer" : true
-            },
+            }
         ],
     "input":"The installer for the QVD Viewer first verifies the required conditions before the actual installation can begin.\n\nIf all conditions are met, the process will continue by installing the automation ODAG-App-Reload.\n\nAfter that, the installer will deploy the following applications:\n- ODAG-Selection-App\n- ODAG-Data-Profiling-App\n\nDuring installation, the process will check if a previous version already exists. If so, the user will be asked whether the existing version should be removed before proceeding.",
     "output":"### Final Steps 🚀\n\nYou're almost there!  \nJust a few final actions are needed to connect everything and make sure your **QVD Cloud Viewer** runs smoothly.\n\n#### Step 1\nOpen the [QVD selection](https://bitmetric-bv.eu.qlikcloud.com/sense/app/{$.oSettings.ODAG-Selection-app})  \n*💡 Tip: Hold **CTRL** (or **CMD** on Mac) to open in a new tab.*\n\n#### Step 2\nEdit the master item **Reload button**. Go to the action \"Automate\" and link it to the automation **QVD Selection Reload**.\n\n#### Step 3\nConfigure the **ODAG connection**:\n1. Go to **App navigation** and click **Create New**.  \n2. Give the connection a clear and recognizable **name**.  \n3. Select **QVD Viewer** as the **Template app**.  \n4. Use the following expression: `SUM(TOTAL_LINE_ITEMS)`  \n5. Set **Maximum row count** to **999999**.  \n6. Define how many ODAG apps you want to generate.  \n7. (Recommended) Set a **retention time** for automatic cleanup of old QVD apps.\n8. Change the navigation of the master visualization **GetQVD** to **On-demand app** and link it to the ODAG connection you just created.\n\n#### Step 4\nThat’s it!  \nSit back, relax, and enjoy your **QVD Cloud Viewer**. ☀\n\n---\n\nKind regards,  \nYour friends at [**Bitmetric**](https://www.bitmetric.nl)\n💌 Need help? Contact us at [support@bitmetric.nl](mailto:support@bitmetric.nl)",
@@ -123,4 +123,5 @@
     "tenant-admin" : true
     }
 ]
+
 
